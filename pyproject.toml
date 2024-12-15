@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "web-hw-5-1"
+version = "0.1.0"
+description = ""
+authors = ["Yevhenii Bessonov <norent777@gmail.com>"]
+readme = "README.md"
+packages = [{include = "web_hw_5"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.11.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
