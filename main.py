@@ -77,7 +77,6 @@ async def main():
             print("Error: Cannot fetch exchange rates for more than 10 days.")
             return
 
-        # Валюти за замовчуванням (зафіксовано)
         currencies = ["USD", "EUR"]
 
         api = PrivatBankAPI()
@@ -85,7 +84,6 @@ async def main():
 
         rates = await service.get_rates(days, currencies)
 
-        # Вивід у форматованому вигляді
         print(json.dumps(rates, indent=2, ensure_ascii=False))
 
     except ValueError as e:
