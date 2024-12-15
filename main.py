@@ -73,7 +73,7 @@ async def main():
 
         rates = await service.get_rates(days, currencies)
         import json
-        print(json.dumps(rates, indent=2, ensure_ascii=False))  # Форматований вивід
+        print(json.dumps(rates, indent=2, ensure_ascii=False))
 
     except ValueError as e:
         print(f"Error: {e}")
